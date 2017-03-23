@@ -1,4 +1,6 @@
 # koffebot
-koffebot console
 
-run npm install
+instructions to get started
+
+* run npm install
+* run http-server
