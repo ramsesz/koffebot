@@ -2,18 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Koffebot CONSOLE</title>
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/particle-api-js/5/particle.min.js">
     </script>
     <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <style type="text/css">
+        body {
+            background: black;
+            color: green;
+            padding: 60px;
+            font-family: Courier;
+        }
+
+        .leeg {
+            color: brown;
+        }
+    </style>
 </head>
 <body>
+<div class="cont text-center">
+    <!--<button onclick="notifySlack()">TOGGLE</button><br><br>-->
+    <button id="btnToggle" class="btn btn-default btn-lg" onclick="startReading()">KOFFEBOT GO!</button><br /><br />
 
-<button onclick="ledToggle()">TOGGLE</button><br>
-<button onclick="startReading()">TOGGLE READ</button>
 
-
-<h1 id="readVal"></h1>
+    <h1 id="percVal"></h1>
+    <h6 id="readVal"></h6>
+</div>
 </body>
 </html>
